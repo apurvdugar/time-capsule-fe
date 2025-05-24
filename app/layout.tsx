@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Host_Grotesk,  Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
+const hostGrotesk = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${hostGrotesk.variable} ${hostGrotesk.variable}`}>
         {children}
       </body>
     </html>
