@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Host_Grotesk,  Geist, Geist_Mono } from "next/font/google";
+import { Host_Grotesk, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const hostGrotesk = Host_Grotesk({
