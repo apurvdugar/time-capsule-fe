@@ -15,10 +15,10 @@ import Link from "next/link";
 import { useSidebar } from "@/context/SidebarContext";
 const sidebarContent: Array<NavButtons> = [
   { title: "Home", icon: <Home />, href: "/dashboard" },
-  { title: "My Capsules", icon: <Package />, href: "/my-capsules" },
-  { title: "New Entry", icon: <PlusSquare />, href: "/new-entry" },
-  { title: "Timeline", icon: <Calendar />, href: "/timeline" },
-  { title: "Archive", icon: <Archive />, href: "/archive" },
+  { title: "My Capsules", icon: <Package />, href: "/dashboard/my-capsules" },
+  { title: "New Entry", icon: <PlusSquare />, href: "/dashboard/new-entry" },
+  { title: "Timeline", icon: <Calendar />, href: "/dashboard/timeline" },
+  { title: "Archive", icon: <Archive />, href: "/dashboard/archive" },
 ];
 function sidebar() {
   const pathname = usePathname();
@@ -30,13 +30,13 @@ function sidebar() {
     <>
       {isOpen && (
         <div
-          className="sticky inset-0 bg-black/15 z-40 top-22.5"
+          className="fixed inset-0 bg-black/15 h-full z-40"
           onClick={toggleSidebar}
         />
       )}
       <div
         className={cn(
-          "sticky top-22.5 left-0 h-[100vh] w-[300px] bg-[var(--sidebar-bg)] py-10 transform transition-transform duration-300 z-40",
+          "fixed top-0 left-0 h-[100vh] w-[300px] bg-[var(--sidebar-bg)] py-10 transform transition-transform duration-300 z-40",
           isOpen ? "translate-x-0" : "-translate-x-full",
           "lg:translate-x-0 lg:static lg:block"
         )}
