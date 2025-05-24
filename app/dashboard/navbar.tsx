@@ -12,13 +12,15 @@ export default function Navbar() {
     <>
       <div className="bg-(--navbar-bg)">
         <div className="flex justify-between py-6 px-8 max-w-(--my-max-width) mx-auto ">
-          <div className="text-3xl font-black text-(--primary-accent) hover:text-(--primary-accent-hover) cursor-pointer flex items-center gap-4">
+          <div className="text-3xl font-black text-(--primary-accent)  cursor-pointer flex items-center gap-4">
             <Menu
-              className="inline cursor-pointer lg:hidden"
+              className="inline cursor-pointer lg:hidden hover:text-(--primary-accent-hover)"
               onClick={handleMenuClick}
             />
             <Link href="/dashboard">
-              <div>Time Capsule</div>
+              <div className="hover:text-(--primary-accent-hover)">
+                Time Capsule
+              </div>
             </Link>
           </div>
           <div className="border rounded-full p-5 bg-[#D4A373] hover:text-(--primary-accent-hover) cursor-pointer"></div>
