@@ -28,7 +28,7 @@ export default function DashboardLayout({
         <nav>
           <Navbar />
         </nav>
-        <main className="flex flex-row items-center">
+        <main className="flex flex-row">
           <Sidebar />
           {children}
         </main>
