@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "./navbar";
-
+import Sidebar from "./sidebar";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -28,7 +28,7 @@ export default function DashboardLayout({
             <Navbar />
         </nav>
         <main className="flex flex-row items-center">
-            sidebar
+            <Sidebar />
             {children}
         </main>
     </>

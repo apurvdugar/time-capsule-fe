@@ -1,8 +1,36 @@
 @import "tailwindcss";
 
 :root {
+  --my-max-width: 1400px;
   --background: #ffffff;
   --foreground: #171717;
+  /* 🎨 Base Colors */
+  --bg-light: #FAF4EB;       /* Main background - soft vintage paper */
+  --text-dark: #1C1C1E;      /* Main text - clean readable dark */
+  --text-secondary: #BDB5A2; /* Subtext or muted labels */
+
+  /* 🧭 Navigation & Structure */
+  --navbar-bg: #2D2A32;      /* Navbar background - dark charcoal */
+  --navbar-text: #FAF4EB;    /* Navbar text color */
+  --navbar-hover: #D4A373;   /* Navbar item hover color */
+
+  --sidebar-bg: #3B3A41;     /* Sidebar background - lighter charcoal */
+  --sidebar-border: #BDB5A2; /* Sidebar right border - subtle separator */
+  --sidebar-active-bg: #F1E3D3; /* Active sidebar item background */
+  --sidebar-active-text: #D4A373; /* Active sidebar text color */
+
+  /* 🖱️ Buttons & Accents */
+  --primary-accent: #D4A373; /* Primary buttons / highlights */
+  --primary-accent-hover: #B67B50; /* Button hover state */
+
+  --highlight: #A3B18A;      /* Soft vintage green - for links, tags, icons */
+
+  /* 🪟 Cards & Surfaces */
+  --card-bg: #FFFFFF;        /* Default card background */
+  --card-bg-muted: #FFF9F0;  /* Slightly tinted version for variation */
+
+  /* 💫 UI Feedback */
+  --hover-bg: #F1E3D3;       /* Soft hover background for rows, items */
 }
 .no-scrollbar {
   scrollbar-width: none; /* Firefox */
