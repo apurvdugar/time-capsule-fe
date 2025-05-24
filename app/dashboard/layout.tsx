@@ -6,7 +6,7 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
+import { SidebarProvider } from "@/context/SidebarContext";
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -24,13 +24,15 @@ export default function DashboardLayout({
 }>) {
   return (
     <>
+      <SidebarProvider>
         <nav>
-            <Navbar />
+          <Navbar />
         </nav>
         <main className="flex flex-row items-center">
-            <Sidebar />
-            {children}
+          <Sidebar />
+          {children}
         </main>
+      </SidebarProvider>
     </>
   );
 }
