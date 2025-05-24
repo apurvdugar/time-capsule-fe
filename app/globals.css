@@ -76,5 +76,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Host_Grotesk",Arial, Helvetica, sans-serif;
+  font-family: var(--host-grotesk), Arial, Helvetica, sans-serif;
 }

@@ -3,7 +3,7 @@ import { Host_Grotesk, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const hostGrotesk = Host_Grotesk({
-  variable: "--font-geist-sans",
+  variable: "--host-grotesk",
   subsets: ["latin"],
 });
 
@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${hostGrotesk.variable} ${hostGrotesk.variable}`}>
+      <body className={`${hostGrotesk.variable} ${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
     </html>
