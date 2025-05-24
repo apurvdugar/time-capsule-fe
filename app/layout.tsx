@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Host_Grotesk,  Geist, Geist_Mono } from "next/font/google";
+import { Host_Grotesk, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const hostGrotesk = Host_Grotesk({
@@ -29,7 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${hostGrotesk.variable} ${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${hostGrotesk.variable} ${geistSans.variable} ${geistMono.variable}`}
+      >
         {children}
       </body>
     </html>
