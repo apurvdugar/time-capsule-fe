@@ -29,9 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${hostGrotesk.variable} ${geistSans.variable} ${geistMono.variable}`}
-      >
+      <body className={`${hostGrotesk.variable} ${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
     </html>
