@@ -2,7 +2,7 @@ import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 export default function Dashboard() {
   return (
-    <div className="flex flex-col max-w-[1250px] lg:ml-0 lg:mr-auto p-6 w-full mx-auto gap-6">
+    <div className="flex flex-col max-w-[1250px] lg:ml-0 lg:mr-auto p-6 w-full mx-auto gap-6 h-[100vh]">
       <div className="relative w-full">
         <Search className="absolute left-3 top-[18px] transform -translate-y-1/2 h-4 w-4 text-(--sidebar-border)" />
         <Input
